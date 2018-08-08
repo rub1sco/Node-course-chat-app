@@ -22,9 +22,10 @@ socket.emit('newMessage',generateMessage('Admin','Welcome to the Chat App'));
 //socket.broadcast.emit from admin text should be new user joined
 socket.broadcast.emit('newMessage',generateMessage('Admin', 'new User joined'));
 
-  socket.on('createMessage', (message)=>{
+  socket.on('createMessage', (message, callback)=>{
     console.log('message data',message)
     io.emit('newMessage', generateMessage(message.from, message.text));
+    callback('from server');
     // socket.broadcast.emit('newMessage'),{
     //   from: message.from,
     //   text: message.text,
