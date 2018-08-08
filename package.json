@@ -18,7 +18,7 @@
     "fresh": "^0.5.2",
     "growl": "^1.10.0",
     "mime": "^1.4.1",
-    "moment": "^2.15.1",
+    "moment": "^2.19.3",
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
